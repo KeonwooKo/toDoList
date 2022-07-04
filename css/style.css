@@ -1,139 +1,166 @@
+* {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
 
-*{
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.inner {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px 0px;
+  margin: auto;
+  width: 1200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  left: 0;
 }
-body{
-    width: 100%;
-    height: 100%;
+img {
+  width: 100%;
+  height: 100%;
 }
-
-.inner{
-    position: absolute;
-    background-color: rgba(0,0,0,.5);
-    padding: 50px 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 1200px;
-    text-align: center; 
+ul,
+li {
+  list-style: none;
 }
-img{
-    width: 100%;
-    height: 100%;
+.english {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-ul,li{
-    list-style: none;
-}
-.english{
-    font-family: 'Roboto', sans-serif;
-}
-.korean{
-    font-family: 'Noto Sans KR', sans-serif;
+.korean {
+  font-family: "Noto Sans KR", sans-serif;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 
-
-li{
-    width: 400px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin: 5px auto;
-    padding: 0px 100px;
-    
-    
+li {
+  width: 400px;
+  height: 50px;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
 }
 li span {
-    text-align: center;
-    color: white;
-    margin-right: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 100;
-    letter-spacing: 2px;
-    
+  text-align: start;
+  color: rgb(171, 228, 180);
+  margin-right: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
-
 
 button {
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    width: 30px;
-    height: 30px; 
-    font-size: 30px;
-    line-height: 10px;
-    cursor: pointer;
+  /* display: inline-block; */
+  display: flex;
+  padding: 1px 0px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  /* line-height: 10px; */
+  cursor: pointer;
 }
 span {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-#greeting{
-    color: white;
-    font-size: 40px;
-    margin-bottom: 30px;
+#greeting {
+  color: rgb(42, 218, 71);
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
-
-#clock{
-    font-size: 100px;
-    color: white;
-    margin-bottom: 30px;
+#clock {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 40px;
 }
-#login-form{
-    margin-bottom: 20px;
-}
-
-#login-form input[type=text]{
-   padding: 5px 10px;
-   text-align: center;
-   outline: none;
-   border: none;
-   border-bottom: 2px solid white;
-   background: none;
-   color: white;
-   font-family: 'Noto Sans KR', sans-serif;
-}
-#login-form input[type=submit]{
-    padding: 5px 10px;
-    background: orange;
-    border: none;
-    cursor: pointer;
-}
-#login-form input::placeholder{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-#todo-form input[type=text]{
-    width: 300px;
-    text-align: center;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid white;
-    height: 30px;
-    padding: 20px 0px; 
-    background: none;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: white;  
-}
-#todo-form input::placeholder{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+#login-form {
+  margin-bottom: 20px;
 }
 
-#quote{
-    margin-top: 40px;
+#login-form input[type="text"] {
+  padding: 5px 5px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  background: none;
+  margin-bottom: 20px;
+}
+#login-form input[type="submit"] {
+  padding: 5px 10px;
+  background: rgb(67, 234, 95);
+  border: none;
+  border-radius: 30%;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-#quote div{
-    font-size: 30px;
-    font-weight: 100;
-    color: white;
+#login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+#todo-form input[type="text"] {
+  width: 300px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  height: 30px;
+  padding: 20px 0px;
+  background: none;
+  color: white;
+  margin-bottom: 30px;
+}
+#todo-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+#login-form input:focus::placeholder,
+#todo-form input:focus::placeholder {
+  color: transparent;
+}
+
+#quote {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  width: 100%;
+}
+#quote div:last-child {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+#quote div {
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+}
+.block-all {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.block-left {
+  width: 40%;
+  text-align: center;
+}
+.block-right {
+  width: 70%;
+  display: flex;
 }
